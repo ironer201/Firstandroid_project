@@ -1,0 +1,195 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+    android:padding="16dp"
+    tools:context=".page">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+        <!--        android:background="@drawable/custom_edit_text"-->
+        >
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="#000000"
+            android:background="@drawable/back_arrow_btn"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/homeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Home"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_marginStart="8dp" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+    <!-- Home Button and Header -->
+
+
+    <!-- Row 1: Teacher update and Absent list -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+        <!-- Teacher update -->
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="160dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/custom_edit_text2"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/teacherUpdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Attendence"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <!-- Absent list -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="160dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:backgroundTint="#000000"
+            android:padding="16dp"
+            android:background="@drawable/custom_edit_text"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/absentList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reason of Absent"
+                android:textSize="20sp"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:gravity="center"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Row 2: Complaint and Health issues -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+        <!-- Complaint -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:backgroundTint="#C471ED"
+            android:padding="16dp"
+            android:background="@drawable/custom_edit_text"
+            android:layout_marginEnd="8dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/complaint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="no Assignment"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#000000"/>
+
+
+        </LinearLayout>
+
+        <!-- Health issues -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:backgroundTint="#3498DB"
+            android:padding="16dp"
+            android:background="@drawable/custom_edit_text"
+            android:layout_marginEnd="8dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/healthIssues"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No of CT"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#000000"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp">
+
+        <!-- Complaint -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/custom_edit_text"
+            android:backgroundTint="#C471ED"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/Assignment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="chatbox"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

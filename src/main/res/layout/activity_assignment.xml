@@ -1,0 +1,223 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:id="@+id/assignment"
+    android:background="@drawable/upbg"
+    tools:context=".Assignment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/Attendance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No. Assignment"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_marginStart="8dp"/>
+        </LinearLayout>
+        <!--        android:background="@drawable/custom_edit_text"-->
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="50dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="@color/white"
+            android:background="@drawable/back_arrow_btn"
+            android:contentDescription="@string/todo"
+            />
+    </RelativeLayout><!-- Course Code Dropdown Button -->
+
+
+
+    <!-- Table Layout for Course Code, CheckBox, Upload, Download Columns -->
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="65dp"
+        android:layout_gravity="center"
+        android:background="#ACE9D5">
+
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Course code"
+                android:textColor="@android:color/black"
+                android:background="#17D0AD"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Check box"
+                android:textColor="@android:color/black"
+                android:background="#17D0AD"
+                android:gravity="center" />
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="File"
+                android:textColor="@android:color/black"
+                android:background="#17D0AD"
+                android:gravity="center" />
+
+
+
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:text="CSE-2211" />
+
+            <CheckBox
+                android:id="@+id/check1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageButton
+                android:id="@+id/upload"
+                android:layout_width="20dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/file_attach"
+                />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:text="CSE-2213" />
+
+            <CheckBox
+                android:id="@+id/check2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageButton
+                android:id="@+id/upload1"
+                android:layout_width="20dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/file_attach"
+                />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:text="CSE-2215" />
+
+            <CheckBox
+                android:id="@+id/check3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageButton
+                android:id="@+id/upload2"
+                android:layout_width="20dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/file_attach"
+                />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:text="EEE-2265" />
+
+            <CheckBox
+                android:id="@+id/check4"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content" />
+            <ImageButton
+                android:id="@+id/upload3"
+                android:layout_width="20dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/file_attach"
+                />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:text="CSE-2247"/>
+
+            <CheckBox
+                android:id="@+id/check5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageButton
+                android:id="@+id/upload4"
+                android:layout_width="20dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/file_attach"
+                />
+        </TableRow>
+
+
+    </TableLayout>
+
+    <!-- Submit Button -->
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#9C27B0"
+        android:text="Submit"
+        android:textColor="@android:color/white"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:layout_marginTop="100dp">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#9C15BD"
+            android:text="Status"
+            android:onClick="status"
+            />
+    </LinearLayout>
+</LinearLayout>

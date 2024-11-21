@@ -1,0 +1,251 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@drawable/upbg"
+    android:padding="16dp"
+    tools:context=".autormain">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <!-- Centered Home Text -->
+        <TextView
+            android:id="@+id/homeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Home"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_centerInParent="true" />  <!-- This centers the TextView -->
+
+        <!-- Log Out Button (Aligned to the right) -->
+        <ImageButton
+            android:id="@+id/logout"
+            android:layout_width="50dp"
+            android:layout_height="44dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="@color/white"
+            android:background="@drawable/log_out" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="80dp"
+            android:gravity="center"
+            android:text="@string/authority"
+            android:background="@drawable/custom_edit_text"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginStart="8dp"/>
+    </LinearLayout>
+
+    <!-- Row 1: Teacher update and Absent list -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+        <!-- Teacher update -->
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="140dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/custom_edit_text"
+            android:backgroundTint="@color/purple"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:gravity="center">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Attendance list"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                />
+
+            <ImageButton
+                android:id="@+id/teacherUpdate"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/back_arrow_btn"
+
+                />
+
+
+        </LinearLayout>
+
+        <!-- Absent list -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="140dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:backgroundTint="#B1ADAD"
+            android:padding="16dp"
+            android:background="@drawable/custom_edit_text"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/absentList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reason of Absent"
+                android:textSize="20sp"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:gravity="center"/>
+            <ImageButton
+                android:id="@+id/Absent"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/back_arrow_btn"
+
+                />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Row 2: Complaint and Health issues -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+        <!-- Complaint -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="140dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:backgroundTint="#0636F2"
+            android:padding="16dp"
+            android:background="@drawable/custom_edit_text"
+            android:layout_marginEnd="8dp"
+            android:gravity="center">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Assignment Details"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                />
+
+            <ImageButton
+                android:id="@+id/assignment"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/back_arrow_btn"
+
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+
+
+        </LinearLayout>
+
+        <!-- Health issues -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="140dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:backgroundTint="#3498DB"
+            android:padding="16dp"
+            android:background="@drawable/custom_edit_text"
+            android:layout_marginEnd="8dp"
+
+            android:gravity="center">
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CT details"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#000000"/>
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/back_arrow_btn"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp">
+
+        <!-- Complaint -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="140dp"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/custom_edit_text"
+            android:backgroundTint="#C471ED"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/Assignment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="chatbox"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <ImageButton
+                android:id="@+id/chat"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/back_arrow_btn"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                />
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">testlogin</string>
+    <string name="password">password</string>
+    <string name="login">Login</string>
+    <string name="username">username</string>
+    <string name="not_registered_signup_now">Not Registered ? Signup Now</string>
+    <string name="home">Home</string>
+    <string name="attendence">Attendence</string>
+    <string name="Name">Name</string>
+    <string name="ID">ID</string>
+    <string name="check">check</string>
+    <string name="todo">TODO</string>
+    <string name="select">select Course</string>
+    <string name="upload">Upload</string>
+    <string name="course_code">course code</string>
+    <string name="authority">Authority</string>
+
+</resources>
