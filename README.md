@@ -184,7 +184,7 @@ Then sync Gradle and run on an emulator or physical device.
 | Role | Name |
 |------|------|
 | **Developer** | [Md. Zarif Noor](https://github.com/ironer201) |
-| **UI/UX Designer** | Jannatul Naima Moon |
+| **UI/UX Designer** |  [Jannatul Naima Moon ](https://github.com/DarkSideScript) |
 | **Contributor** *(CT Logic)* | Jihad Hasan Jwel |
 
 ---
